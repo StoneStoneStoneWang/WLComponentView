@@ -27,7 +27,36 @@ Pod::Spec.new do |spec|
     end
   end
   
-  
+  spec.subspec 'TextFeild' do |tf|
+    tf.subspec 'Setting' do |setting|
+      setting.source_files = "Code/TF/Setting/*.{swift}"
+    end
+    tf.subspec 'Base' do |base|
+      base.source_files = "Code/TF/Base/*.{swift}"
+      base.dependency 'WLToolsKit/WLThen'
+      base.dependency 'WLComponentView/TextFeild/Setting'
+    end
+    
+    tf.subspec 'LeftTitle' do |leftTitle|
+      leftTitle.source_files = "Code/TF/LeftTitle/*.{swift}"
+      leftTitle.dependency 'WLComponentView/TextFeild/Base'
+      leftTitle.dependency 'WLToolsKit/WLColor/Base'
+    end
+    tf.subspec 'LeftImage' do |leftImage|
+      leftImage.source_files = "Code/TF/LeftImage/*.{swift}"
+      leftImage.dependency 'WLComponentView/TextFeild/Base'
+    end
+    tf.subspec 'Password' do |password|
+      password.source_files = "Code/TF/Password/*.{swift}"
+      password.dependency 'WLComponentView/TextFeild/LeftImage'
+      password.dependency 'WLComponentView/TextFeild/LeftTitle'
+    end
+    tf.subspec 'Vcode' do |vcode|
+      vcode.source_files = "Code/TF/Vcode/*.{swift}"
+      vcode.dependency 'WLComponentView/TextFeild/LeftImage'
+      vcode.dependency 'WLComponentView/TextFeild/LeftTitle'
+    end
+  end
   
 end
 
