@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C2ADCB800E1AE75866D916C /* Pods_WLCompoentViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8333551BD8B5800005F1DF7 /* Pods_WLCompoentViewDemo.framework */; };
+		6CA7F529226614E600472D9A /* WLNickNameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA7F528226614E600472D9A /* WLNickNameTextField.swift */; };
 		6CADA5982265E191000A88ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CADA5972265E191000A88ED /* AppDelegate.swift */; };
 		6CADA59A2265E191000A88ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CADA5992265E191000A88ED /* ViewController.swift */; };
 		6CADA59D2265E191000A88ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CADA59B2265E191000A88ED /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		09328814CD0108C33C754A31 /* Pods_WLCompoentViewDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLCompoentViewDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1202D000A1F29FE105470403 /* Pods-WLCompoentViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLCompoentViewDemo.release.xcconfig"; path = "Target Support Files/Pods-WLCompoentViewDemo/Pods-WLCompoentViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		14536FB1FF20914B9EBE7983 /* Pods-WLCompoentViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLCompoentViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-WLCompoentViewDemo/Pods-WLCompoentViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6CA7F528226614E600472D9A /* WLNickNameTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WLNickNameTextField.swift; sourceTree = "<group>"; };
 		6CADA5942265E191000A88ED /* WLCompoentViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLCompoentViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CADA5972265E191000A88ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CADA5992265E191000A88ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 				1202D000A1F29FE105470403 /* Pods-WLCompoentViewDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CA7F527226614BD00472D9A /* NickName */ = {
+			isa = PBXGroup;
+			children = (
+				6CA7F528226614E600472D9A /* WLNickNameTextField.swift */,
+			);
+			path = NickName;
 			sourceTree = "<group>";
 		};
 		6CADA58B2265E191000A88ED = {
@@ -205,6 +215,7 @@
 		6CADA5CA2265E1DD000A88ED /* TF */ = {
 			isa = PBXGroup;
 			children = (
+				6CA7F527226614BD00472D9A /* NickName */,
 				6CADA5D92265E5FF000A88ED /* Vcode */,
 				6CADA5D82265E5F7000A88ED /* Password */,
 				6CADA5CB2265E1DD000A88ED /* LeftTitle */,
@@ -446,6 +457,7 @@
 				6CADA5D62265E1DD000A88ED /* UITextField+WL.swift in Sources */,
 				6CADA5D42265E1DD000A88ED /* WLLeftTitleTextField.swift in Sources */,
 				6CADA5D52265E1DD000A88ED /* WLLeftImageTextField.swift in Sources */,
+				6CA7F529226614E600472D9A /* WLNickNameTextField.swift in Sources */,
 				6CADA5982265E191000A88ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

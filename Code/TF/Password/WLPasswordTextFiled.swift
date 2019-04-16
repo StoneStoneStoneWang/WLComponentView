@@ -45,6 +45,7 @@ public final class WLPasswordImageTextFiled: WLLeftImageTextField {
         
         return CGRect(x: rect.minX, y: rect.minY, width: rect.width  - 30, height: rect.height)
     }
+    
     @objc (commitInit)
     public override func commitInit() {
         super.commitInit()
@@ -61,6 +62,7 @@ public final class WLPasswordImageTextFiled: WLLeftImageTextField {
         
     }
 }
+
 @objc (WLPasswordTitleTextFiled)
 public final class WLPasswordTitleTextFiled: WLLeftTitleTextField {
     

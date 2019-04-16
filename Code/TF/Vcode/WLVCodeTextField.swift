@@ -27,7 +27,8 @@ public final class WLVCodeImageTextField: WLLeftImageTextField {
         return CGRect(x: rect.minX - 20, y: rect.minY, width: rect.width, height: rect.height)
     }
 }
-@objc (WLVCodeImageTextField)
+
+@objc (WLVCodeTitleTextField)
 public final class WLVCodeTitleTextField: WLLeftTitleTextField {
     
     public final let vcodeItem: UIButton = UIButton(type: .custom).then {

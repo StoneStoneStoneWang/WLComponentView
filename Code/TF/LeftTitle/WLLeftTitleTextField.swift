@@ -38,15 +38,16 @@ open class WLLeftTitleTextField: WLBaseTextField {
             leftTitleLabel.frame = newValue
         }
     }
-}
-
-extension WLLeftTitleTextField {
     @objc (commitInit)
     open override func commitInit() {
         super.commitInit()
         
         leftTitleFrame = CGRect(x: 0, y: 0, width: 80, height: 44)
     }
+    
+}
+
+extension WLLeftTitleTextField {
     
     @objc open override func makeAttribute(_ closure: @escaping (WLLeftTitleTextField) -> ()) {
         

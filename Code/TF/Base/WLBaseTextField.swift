@@ -158,6 +158,8 @@ open class WLBaseTextField: UITextField {
     fileprivate var pattern: String = ""
     // MARK: 文本变化回调（observer为UITextFiled）
     fileprivate var textChanged: WLTextChanged!
+    
+    
 }
 
 extension WLBaseTextField {
@@ -422,22 +424,7 @@ extension WLBaseTextField {
 // MARK: editingRect and textRect rightViewRect leftViewRect
 extension WLBaseTextField {
     
-    open override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        
-        return super.editingRect(forBounds: bounds)
-    }
-    open override func textRect(forBounds bounds: CGRect) -> CGRect {
-        
-        return super.textRect(forBounds: bounds)
-    }
-    open override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
-        
-        return super.rightViewRect(forBounds: bounds)
-    }
-    open override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
-        
-        return super.leftViewRect(forBounds: bounds)
-    }
+    
 }
 extension String {
     //使用正则表达式替换

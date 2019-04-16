@@ -38,14 +38,16 @@ open class WLLeftImageTextField: WLBaseTextField {
             leftImageView.frame = newValue
         }
     }
-}
-extension WLLeftImageTextField {
     @objc (commitInit)
     open override func commitInit() {
         super.commitInit()
         
         leftImageFrame = CGRect(x: 0, y: 0, width: 80, height: 44)
     }
+    
+}
+extension WLLeftImageTextField {
+   
     
     @objc open override func makeAttribute(_ closure: @escaping (WLLeftImageTextField) -> ()) {
         

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLComponentView"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A Lib For view."
   spec.description  = <<-DESC
   文本框的工具类
@@ -43,14 +43,20 @@ Pod::Spec.new do |spec|
       leftTitle.dependency 'WLToolsKit/WLColor'
     end
     tf.subspec 'LeftImage' do |leftImage|
-      leftImage.source_files = "Code/TF/LeftImage/*.{swift}"
+      leftImage.source_files = "Code/TF/LeftImg/*.{swift}"
       leftImage.dependency 'WLComponentView/TextFeild/Base'
     end
+    tf.subspec 'NickName' do |nickName|
+      nickName.source_files = "Code/TF/NickName/*.{swift}"
+      nickName.dependency 'WLComponentView/TextFeild/Base'
+    end
+    
     tf.subspec 'Password' do |password|
       password.source_files = "Code/TF/Password/*.{swift}"
       password.dependency 'WLComponentView/TextFeild/LeftImage'
       password.dependency 'WLComponentView/TextFeild/LeftTitle'
     end
+
     tf.subspec 'Vcode' do |vcode|
       vcode.source_files = "Code/TF/Vcode/*.{swift}"
       vcode.dependency 'WLComponentView/TextFeild/LeftImage'
