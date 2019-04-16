@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLComponentView"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A Lib For view."
   spec.description  = <<-DESC
   文本框的工具类
@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
     tf.subspec 'LeftTitle' do |leftTitle|
       leftTitle.source_files = "Code/TF/LeftTitle/*.{swift}"
       leftTitle.dependency 'WLComponentView/TextFeild/Base'
-      leftTitle.dependency 'WLToolsKit/WLColor/Base'
+      leftTitle.dependency 'WLToolsKit/WLColor'
     end
     tf.subspec 'LeftImage' do |leftImage|
       leftImage.source_files = "Code/TF/LeftImage/*.{swift}"
