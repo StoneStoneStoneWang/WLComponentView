@@ -26,6 +26,16 @@ public final class WLVCodeImageTextField: WLLeftImageTextField {
         
         return CGRect(x: rect.minX - 20, y: rect.minY, width: rect.width, height: rect.height)
     }
+    @objc (commitInit)
+    public override func commitInit() {
+        super.commitInit()
+        
+        set_rightViewMode(.always)
+
+        set_rightView(vcodeItem)
+        
+        vcodeItem.sizeToFit()
+    }
 }
 
 @objc (WLVCodeTitleTextField)
@@ -43,5 +53,15 @@ public final class WLVCodeTitleTextField: WLLeftTitleTextField {
         let rect = super.rightViewRect(forBounds: bounds)
         
         return CGRect(x: rect.minX - 20, y: rect.minY, width: rect.width, height: rect.height)
+    }
+    @objc (commitInit)
+    public override func commitInit() {
+        super.commitInit()
+        
+        set_rightViewMode(.always)
+        
+        set_rightView(vcodeItem)
+        
+        vcodeItem.sizeToFit()
     }
 }

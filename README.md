@@ -19,3 +19,5 @@ pod  'WLComponentView/TextFeild/NickName'
 pod  'WLComponentView/TextFeild/Password'
 
 pod  'WLComponentView/TextFeild/Vcode'
+
+pod 'WLComponentView/Draw'

@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLComponentView"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A Lib For view."
   spec.description  = <<-DESC
   文本框的工具类
@@ -56,12 +56,16 @@ Pod::Spec.new do |spec|
       password.dependency 'WLComponentView/TextFeild/LeftImage'
       password.dependency 'WLComponentView/TextFeild/LeftTitle'
     end
-
+    
     tf.subspec 'Vcode' do |vcode|
       vcode.source_files = "Code/TF/Vcode/*.{swift}"
       vcode.dependency 'WLComponentView/TextFeild/LeftImage'
       vcode.dependency 'WLComponentView/TextFeild/LeftTitle'
     end
+  end
+  spec.subspec 'Draw' do |draw|
+    
+    draw.source_files = "Code/Draw/*.{swift}"
   end
   
 end
