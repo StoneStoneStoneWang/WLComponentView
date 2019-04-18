@@ -10,7 +10,7 @@ import UIKit
 @objc (WLLeftImageTextField)
 open class WLLeftImageTextField: WLBaseTextField {
     
-    fileprivate var leftImageView: UIImageView = UIImageView()
+    fileprivate final let leftImageView: UIImageView = UIImageView()
     
     @objc (leftImageName)
     open var leftImageName: String = "" {
@@ -30,7 +30,7 @@ open class WLLeftImageTextField: WLBaseTextField {
             leftView = leftImageView
         }
     }
-    
+    @objc (leftImageFrame)
     open var leftImageFrame: CGRect = .zero {
         
         willSet {
@@ -47,7 +47,7 @@ open class WLLeftImageTextField: WLBaseTextField {
     
 }
 extension WLLeftImageTextField {
-   
+    
     
     @objc open override func makeAttribute(_ closure: @escaping (WLLeftImageTextField) -> ()) {
         

@@ -14,8 +14,8 @@ public final class WLPasswordImageTextFiled: WLLeftImageTextField {
     
     @objc (passwordItem)
     public final let passwordItem: UIButton = UIButton(type: .custom)
-    
-    @objc var normalIcon: String = "" {
+    @objc (normalIcon)
+    public  var normalIcon: String = "" {
         
         willSet {
             guard !newValue.isEmpty else { return }
@@ -23,8 +23,8 @@ public final class WLPasswordImageTextFiled: WLLeftImageTextField {
             passwordItem.setImage(UIImage(named: newValue), for: .highlighted)
         }
     }
-    
-    @objc var highIcon: String = "" {
+    @objc (selectedIcon)
+    public var selectedIcon: String = "" {
         
         willSet {
             guard !newValue.isEmpty else { return }
@@ -69,7 +69,8 @@ public final class WLPasswordTitleTextFiled: WLLeftTitleTextField {
     @objc (passwordItem)
     public final let passwordItem: UIButton = UIButton(type: .custom)
     
-    @objc var normalIcon: String = "" {
+    @objc (normalIcon)
+    public  var normalIcon: String = "" {
         
         willSet {
             guard !newValue.isEmpty else { return }
@@ -77,8 +78,8 @@ public final class WLPasswordTitleTextFiled: WLLeftTitleTextField {
             passwordItem.setImage(UIImage(named: newValue), for: .highlighted)
         }
     }
-    
-    @objc var highIcon: String = "" {
+    @objc (selectedIcon)
+    public var selectedIcon: String = "" {
         
         willSet {
             guard !newValue.isEmpty else { return }

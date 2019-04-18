@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 @objc (WLLoginStyle1View)
 public final class WLLoginStyle1View: UIView {
-    
-    var fillColor: UIColor = .white {
+    @objc (fillColor)
+    public var fillColor: UIColor = .white {
         
         willSet {
             
@@ -19,7 +19,7 @@ public final class WLLoginStyle1View: UIView {
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
     }

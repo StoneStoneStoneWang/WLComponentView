@@ -30,7 +30,7 @@ open class WLLeftTitleTextField: WLBaseTextField {
             leftView = leftTitleLabel
         }
     }
-    
+    @objc (leftTitleFrame)
     open var leftTitleFrame: CGRect = .zero {
         
         willSet {

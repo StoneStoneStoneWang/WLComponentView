@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLComponentView"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "A Lib For view."
   spec.description  = <<-DESC
   文本框的工具类
