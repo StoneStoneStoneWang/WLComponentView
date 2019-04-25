@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
   spec.name         = "WLComponentView"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "A Lib For view."
   spec.description  = <<-DESC
   文本框的工具类
@@ -22,7 +22,6 @@ Pod::Spec.new do |spec|
   spec.subspec 'Picker' do |picker|
     
     picker.subspec 'DatePicker' do |datePicker|
-      
       datePicker.source_files = "Code/Picker/DatePicker/*.{swift}"
     end
   end
@@ -33,14 +32,14 @@ Pod::Spec.new do |spec|
     end
     tf.subspec 'Base' do |base|
       base.source_files = "Code/TF/Base/*.{swift}"
-      base.dependency 'WLToolsKit/WLThen'
+      base.dependency 'WLToolsKit/Then'
       base.dependency 'WLComponentView/TextFeild/Setting'
     end
     
     tf.subspec 'LeftTitle' do |leftTitle|
       leftTitle.source_files = "Code/TF/LeftTitle/*.{swift}"
       leftTitle.dependency 'WLComponentView/TextFeild/Base'
-      leftTitle.dependency 'WLToolsKit/WLColor'
+      leftTitle.dependency 'WLToolsKit/Color'
     end
     tf.subspec 'LeftImage' do |leftImage|
       leftImage.source_files = "Code/TF/LeftImg/*.{swift}"
